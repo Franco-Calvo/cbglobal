@@ -1,17 +1,13 @@
 import React from "react";
 import "./nosotros.css";
-import imgOne from "../../images/us-one.png";
-import imgTwo from "../../images/us-two.png";
-import imgThree from "../../images/us-three.png";
-import imgFour from "../../images/us-four.png";
+import image from "../../images/Image.png";
 
 export default function Nosotros() {
   return (
     <div className="HomeNosotros">
-      <div className="us-title">
-        <h2>Nosotros</h2>
-      </div>
       <div className="us-p">
+        <h2>Nosotros</h2>
+
         <span>
           • Contamos con un equipo de expertos altamente calificados en
           finanzas, inversiones y seguros, con años de experiencia en el sector
@@ -40,6 +36,10 @@ export default function Nosotros() {
           financieras. Esperamos tener la oportunidad de ayudarle a alcanzar sus
           objetivos financieros y alcanzar la estabilidad financiera que busca.
         </span>
+      </div>
+
+      <div className="container-img">
+        <img src={image} alt="" />
       </div>
     </div>
   );
