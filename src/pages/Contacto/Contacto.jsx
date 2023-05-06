@@ -1,18 +1,21 @@
 import React from "react";
 import "./contacto.css";
+import { FaArrowRight } from "react-icons/fa";
 
 export default function Contacto() {
   return (
-    <div className="ContactContainer">
-      <div className="infoTop">
-        <h4>Comunícate con nosotros. </h4>
+    <div className="contact-container">
+      <div className="info-top">
+        <h4>
+          Comunícate con <span>nosotros.</span>
+        </h4>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium,
           repellendus vitae! Perspiciatis adipisci voluptatum quidem cumque
           natus laudantium aliquid? Reprehenderit qui quisquam quos quaerat eos!
         </p>
       </div>
-      <div>
+      <div className="container-inputs-contact">
         <span>
           <label>Correo electrónico</label>
           <input type="email" />
@@ -25,10 +28,13 @@ export default function Contacto() {
 
         <span>
           <label>Número de teléfono</label>
-          <input type="number" />
+          <input type="tel" />
         </span>
 
-        <button>Comunicarse</button>
+        <button type="submit">
+          Comunicarse
+          <FaArrowRight className="arrow-contact" />
+        </button>
       </div>
     </div>
   );
