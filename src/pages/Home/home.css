@@ -1,5 +1,84 @@
 .HomeContainer {
   width: 100%;
   height: 100vh;
-  background: gray;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+
+  margin-top: 5rem;
+
+}
+
+.home-tittle {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.home-tittle h1 {
+  font-size: 10rem;
+  height: 12rem;
+}
+
+.home-tittle h1 span {
+  color: #2853ce;
+}
+
+.home-content {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.home-content p {
+  width: 80%;
+}
+
+.home-content .button-info {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.8rem;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #2853ce;
+  border: 2px solid #2853ce;
+  border-radius: 2rem;
+}
+
+.home-content .button-info:hover {
+  background-color: #ffffff;
+  color: #2853ce;
+  transition: 400ms all;
+}
+
+.content-images-home {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.content-images-home .image-one {
+  width: 65%;
+}
+
+.content-images-home .image-one img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.content-images-home .image-two {
+  width: 35%;
+}
+
+.content-images-home .image-two img {
+  width: 100%;
+  object-fit: contain;
 }
