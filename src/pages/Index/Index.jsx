@@ -6,9 +6,9 @@ import Contacto from "../Contacto/Contacto";
 export default function Index() {
   return (
     <>
-      <Home />
+      {/* <Home /> */}
       <Nosotros />
-      <Contacto />
+      {/* <Contacto /> */}
     </>
   );
 }
