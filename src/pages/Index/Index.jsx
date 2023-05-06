@@ -7,9 +7,10 @@ import Navbar from "../../components/Navbar";
 export default function Index() {
   return (
     <>
-      {/* <Home /> */}
-      <Nosotros />
-      {/* <Contacto /> */}
+      <Navbar/>
+      <Home />
+      {/* <Nosotros /> */}
+      <Contacto />
     </>
   );
 }
