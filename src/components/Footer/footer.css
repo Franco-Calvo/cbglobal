@@ -1,0 +1,153 @@
+.container-footer {
+  position: absolute;
+  display: flex;
+  height: 25vh;
+  width: 100%;
+  color: white;
+  flex-direction: column;
+  background-color: #2853ce;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-title {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-h {
+  align-items: center;
+  display: flex;
+  width: 90%;
+  font-size: 2rem;
+}
+
+.footer-about {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -30px;
+}
+
+.box-about {
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  width: 90%;
+  height: 10vh;
+  align-items: center;
+}
+
+.about-links {
+  display: flex;
+  gap: 1.25rem;
+  font-size: 1.2rem;
+  width: 60%;
+}
+
+.about-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.about-social {
+  display: flex;
+  width: 40%;
+  gap: 1.25rem;
+}
+
+.about-rights {
+  display: flex;
+  font-size: 1.2rem;
+  width: 40%;
+  justify-content: end;
+}
+
+.icons {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.box-soicons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .about-rights {
+    justify-content: end;
+  }
+
+  .about-links,
+  .about-rights,
+  .icons {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 620px) and (max-width: 768px) {
+  .about-links,
+  .icons {
+    font-size: 0.8rem;
+  }
+
+  .box-soicons {
+    width: 50%;
+  }
+
+  .about-rights {
+    width: 50%;
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 620px) {
+  .container-footer {
+    flex-direction: column;
+    height: 30vh;
+  }
+  .box-about {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 15vh;
+  }
+
+  .about-links,
+  .about-social {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-links,
+  .icons {
+    font-size: 1rem;
+  }
+
+  .box-soicons {
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 0.9375rem;
+    flex-direction: column;
+  }
+
+  .about-rights {
+    margin-top: 10px;
+    font-size: 0.7rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-h {
+    align-items: center;
+    justify-content: center;
+    margin-top: -4rem;
+  }
+}
