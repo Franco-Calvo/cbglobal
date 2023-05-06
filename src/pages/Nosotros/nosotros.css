@@ -4,50 +4,38 @@
   height: 100vh;
   flex-direction: column;
   align-items: center;
-}
-
-.us-title {
-  display: flex;
-  width: 90%;
-  justify-content: center;
-  align-items: center;
-  font-size: 50px;
+  justify-content: flex-start;
 }
 
 .us-p {
   display: flex;
   width: 90%;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-direction: column;
   align-items: center;
-  font-size: 10px;
+  font-size: 16px;
+  gap: 1rem;
+}
+
+.us-p h2 {
+  font-size: 4rem;
 }
 
 .container-img {
-  width: 90%;
-  height: 10rem;
-}
-
-.box-img {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.container-img img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
   width: 100%;
-  height: 50%;
-  gap: 15px;
-}
-
-.img-one {
-  width: 30%;
-}
-
-.img-two {
-  width: 70%;
-}
-
-.img-one img {
-  width: 100%;
-  object-fit: contain;
-}
-
-.img-two img {
-  width: 100%;
-  object-fit: contain;
+  height: 100%;
 }

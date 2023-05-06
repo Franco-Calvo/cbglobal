@@ -1,64 +1,45 @@
 import React from "react";
 import "./nosotros.css";
-import imgOne from "../../images/us-one.png";
-import imgTwo from "../../images/us-two.png";
-import imgThree from "../../images/us-three.png";
-import imgFour from "../../images/us-four.png";
+import image from "../../images/Image.png";
 
 export default function Nosotros() {
   return (
     <div className="HomeNosotros">
-      <div className="us-title">
-        <h2>Nosotros</h2>
-      </div>
       <div className="us-p">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut suscipit
-        harum, nulla doloremque tempora architecto dolor minima at aspernatur
-        officiis odio cumque perferendis necessitatibus ipsa voluptatibus quidem
-        aliquid dolorum nemo. Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Aut suscipit harum, nulla doloremque tempora architecto dolor
-        minima at aspernatur officiis odio cumque perferendis necessitatibus
-        ipsa voluptatibus quidem aliquid dolorum nemo. Lorem ipsum dolor sit
-        amet consectetur adipisicing elit. Aut suscipit harum, nulla doloremque
-        tempora architecto dolor minima at aspernatur officiis odio cumque
-        perferendis necessitatibus ipsa voluptatibus quidem aliquid dolorum
-        nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-        suscipit harum, nulla doloremque tempora architecto dolor minima at
-        aspernatur officiis odio cumque perferendis necessitatibus ipsa
-        voluptatibus quidem aliquid dolorum nemo. Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Aut suscipit harum, nulla doloremque
-        tempora architecto dolor minima at aspernatur officiis odio cumque
-        perferendis necessitatibus ipsa voluptatibus quidem aliquid dolorum
-        nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-        suscipit harum, nulla doloremque tempora architecto dolor minima at
-        aspernatur officiis odio cumque perferendis necessitatibus ipsa
-        voluptatibus quidem aliquid dolorum nemo. Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Aut suscipit harum, nulla doloremque
-        tempora architecto dolor minima at aspernatur officiis odio cumque
-        perferendis necessitatibus ipsa voluptatibus quidem aliquid dolorum
-        nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <h2>Nosotros</h2>
+
+        <span>
+          • Contamos con un equipo de expertos altamente calificados en
+          finanzas, inversiones y seguros, con años de experiencia en el sector
+          financiero. Nuestra capacidad para entender las necesidades de
+          nuestros clientes y crear soluciones personalizadas nos distingue de
+          la competencia.
+        </span>
+
+        <span>
+          • En nuestra empresa, valoramos la integridad y la transparencia en
+          todo lo que hacemos. Trabajamos diligentemente para asegurarnos de que
+          nuestros clientes comprendan completamente sus opciones financieras y
+          las consecuencias de cada una de ellas.
+        </span>
+
+        <span>
+          • Estamos comprometidos en construir relaciones a largo plazo con
+          nuestros clientes, basadas en la confianza y el respeto mutuo. Nos
+          enorgullece nuestra capacidad para ayudar a nuestros clientes a
+          alcanzar sus objetivos financieros y estamos ansiosos de trabajar con
+          usted para hacer lo mismo.
+        </span>
+
+        <span>
+          • Gracias por considerar nuestra empresa para sus necesidades
+          financieras. Esperamos tener la oportunidad de ayudarle a alcanzar sus
+          objetivos financieros y alcanzar la estabilidad financiera que busca.
+        </span>
       </div>
 
       <div className="container-img">
-        <div className="box-img">
-          <div className="img-one">
-            <img src={imgOne} alt="asd" />
-          </div>
-
-          <div className="img-two">
-            <img src={imgTwo} alt="asd" />
-          </div>
-        </div>
-
-        <div className="box-img">
-          <div className="img-one">
-            <img src={imgThree} alt="asd" />
-          </div>
-
-          <div className="img-two">
-            <img src={imgFour} alt="asd" />
-          </div>
-        </div>
+        <img src={image} alt="" />
       </div>
     </div>
   );
