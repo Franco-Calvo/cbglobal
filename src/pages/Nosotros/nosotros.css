@@ -1,180 +1,153 @@
 .HomeNosotros {
-  display: flex;
   width: 100%;
-  height: 100%;
-  flex-direction: column;
+  height: 100vh;
+  display: flex;
   align-items: center;
-  justify-content: flex-start;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-.container-page {
+/*Title*/
+
+.nosotros-title {
+  display: flex;
+  justify-content: flex-start;
+  width: 90%;
+  flex-wrap: wrap;
+}
+
+.title-one {
+  color: black;
+}
+
+.title-two {
+  color: #0536e3;
+}
+
+h2 {
+  font-size: 6rem;
+  font-weight: 600;
+}
+
+/*Contenido*/
+
+.nosotros-container {
   display: flex;
   width: 90%;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
-  height: 100%;
+  height: auto;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 8px 0px;
 }
-/*Titulo*/
 
-.first-h {
+.nosotros-contenid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 48%;
+}
+
+.title-container {
+  font-size: 32px;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
-  height: 6rem;
-}
-
-.box-father {
-  margin-top: 0rem;
-  display: flex;
   width: 100%;
-  height: 150px;
-  font-size: 4rem;
+  margin: 10px 0px 20px 0px;
+  font-weight: 400;
 }
 
-.box-childs {
-  height: 100px;
-}
-
-.second-h {
-  color: blue;
-}
-
-/*Frases*/
-
-.container-frases {
-  width: 100%;
-  height: 300px;
-  display: flex;
-  gap: 45px;
-  overflow: auto;
-}
-
-.box-one,
-.box-two {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  gap: 100%;
-  height: 50%;
-}
-
-.box-child {
-  width: 100%;
-}
-
-.child-one {
-  margin-bottom: -100px;
-}
-
-.box-title {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.box-title label {
-  width: 10%;
-  font-weight: bold;
-  font-size: 20px;
-}
-.asd {
-  width: 90%;
-  font-size: 30px;
-}
-
-.box-child span {
-  font-size: 14px;
+.nosotros-contenid span,
+.card span {
+  font-size: 16px;
+  font-weight: lighter;
+  line-height: 24px;
+  text-align: justify;
 }
 
 /*Cards*/
 
-.container-cards {
-  width: 100%;
-  height: auto;
+.nosotros-cards {
   display: flex;
-  gap: 100px;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  width: 90%;
+  justify-content: space-between;
   align-items: center;
-  margin-top: 1rem;
-  overflow: auto;
+  gap: 1rem;
+  padding: 1rem;
+  flex-wrap: wrap;
 }
 
 .card {
-  width: 300px;
-  height: 300px;
-  border-radius: 10%;
-  background-color: #151515;
-  color: white;
   display: flex;
-  justify-content: center;
-}
-
-.cards-contenid {
-  width: 80%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-evenly;
+  width: 30%;
   flex-direction: column;
-  height: 100%;
+  justify-content: space-around;
+  border: 1px black;
+  background-color: #151515;
+  height: 400px;
+  border-radius: 10%;
+  padding: 1.5rem;
+  color: white;
 }
 
-.span-card {
-  font-weight: lighter;
+.card h2 {
+  font-size: 2rem;
 }
 
-/*Media Queries*/
-
-@media (max-width: 950px) {
-  .asd {
-    font-size: 25px;
-  }
-  .box-title label {
-    font-size: 15px;
-  }
-  .box-child span {
-    font-size: 12px;
+/*Responsive*/
+@media (max-width: 1024px) {
+  .card h2 {
+    font-size: 1.5rem;
   }
 }
 
 @media (max-width: 800px) {
-  .box-father {
-    font-size: 3rem;
+  .nosotros-title {
+    justify-content: center;
+    align-items: center;
+  }
+  h2 {
+    font-size: 4rem;
   }
 
-  .container-cards {
-    gap: 15px;
+  .nosotros-cards {
+    flex-direction: column;
   }
 
-  @media (max-width: 600px) {
-    .box-childs {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .box-father {
-      font-size: 2rem;
-      height: 100px;
-      justify-content: center;
-      align-items: center;
-    }
-  }
-
-  .asd {
-    font-size: 20px;
-  }
-  .box-title label {
-    font-size: 12px;
+  .card {
+    width: 100%;
   }
 }
 
-@media (max-width: 400px) {
-  .box-father {
-    font-size: 1.5rem;
+@media (max-width: 670px) {
+  .nosotros-container {
+    flex-direction: column;
   }
 
-  .asd {
-    font-size: 17px;
+  .title-container {
+    width: 100%;
+  }
+
+  .nosotros-contenid {
+    width: 100%;
+  }
+}
+
+@media (max-width: 535px) {
+  h2 {
+    font-size: 3rem;
+  }
+
+  .title-container {
+    justify-content: center;
+    text-align: center;
+  }
+
+  @media (max-width: 400px) {
+    h2 {
+      font-size: 2.5rem;
+    }
   }
 }

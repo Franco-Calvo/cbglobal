@@ -5,111 +5,81 @@ import image from "../../images/Image.png";
 export default function Nosotros() {
   return (
     <div className="HomeNosotros">
-      <div className="container-page">
-        <div className="box-father">
-          <div className="box-childs">
-            <h2 className="first-h">Sobre</h2>
-          </div>
-          <div className="box-childs">
-            <h2 className="second-h">Nosotros</h2>
-          </div>
+      <div className="nosotros-title">
+        <h2 className="title-one">Sobre</h2>
+        <h2 className="title-two">Nosotros</h2>
+      </div>
+
+      <div className="nosotros-container">
+        <div className="nosotros-contenid">
+          <h2 className="title-container">Access to Enterprise</h2>
+          <span>
+            As a member of Cain-Surrey Capital you will have access to our team
+            of experts who have extensive experience and knowledge in various
+            industries and financial services. Our experts are always available
+            to provide insights, guidance, and advice to help you make informed
+            decisions that can drive your business forward.
+          </span>
         </div>
 
-        <div className="container-frases">
-          <div className="box-one">
-            <div className="box-child child-one">
-              <div className="box-title">
-                <label>01</label>
-                <h3 className="asd">Access to Enterprise</h3>
-              </div>
-              <span>
-                Contamos con un equipo de expertos altamente calificados en
-                finanzas, inversiones y seguros, con años de experiencia en el
-                sector financiero. Nuestra capacidad para entender las
-                necesidades de nuestros clientes y crear soluciones
-                personalizadas nos distingue de la competencia.
-              </span>
-              •
-            </div>
-            <div className="box-child">
-              <div className="box-title">
-                <label>03</label>
-                <h3 className="asd">Global Reach</h3>
-              </div>
-
-              <span>
-                En nuestra empresa, valoramos la integridad y la transparencia
-                en todo lo que hacemos. Trabajamos diligentemente para
-                asegurarnos de que nuestros clientes comprendan completamente
-                sus opciones financieras y las consecuencias de cada una de
-                ellas.
-              </span>
-            </div>
-          </div>
-
-          <div className="box-two">
-            <div className="box-child child-one">
-              <div className="box-title">
-                <label>02</label>
-                <h3 className="asd">Customized Solutions</h3>
-              </div>
-              <span>
-                Estamos comprometidos en construir relaciones a largo plazo con
-                nuestros clientes, basadas en la confianza y el respeto mutuo.
-                Nos enorgullece nuestra capacidad para ayudar a nuestros
-                clientes a alcanzar sus objetivos financieros y estamos ansiosos
-                de trabajar con usted para hacer lo mismo.
-              </span>
-            </div>
-            <div className="box-child ">
-              <div className="box-title">
-                <label>04</label>
-                <h3 className="asd">Trust and Integrity</h3>
-              </div>
-              <span>
-                Gracias por considerar nuestra empresa para sus necesidades
-                financieras. Esperamos tener la oportunidad de ayudarle a
-                alcanzar sus objetivos financieros y alcanzar la estabilidad
-                financiera que busca.
-              </span>
-            </div>
-          </div>
+        <div className="nosotros-contenid">
+          <h2 className="title-container">Customized Solutions</h2>
+          <span>
+            As a member of Cain-Surrey Capital, you will have access to our team
+            of experts who have extensive experience and knowledge in various
+            industries and financial services. Our experts are always available
+            to provide insights, guidance, and advice to help you make informed
+            decisions that can drive your business forward.
+          </span>
         </div>
 
-        <div className="container-cards">
-          <div className="card">
-            <div className="cards-contenid">
-              <label>01</label>
-              <h3>Innovative Approach</h3>
-              <span className="span-card">
-                We combine our extensive experience and knowledge with
-                cutting-edge technology to develop customized solutions that
-                help our clients achieve their goals.
-              </span>
-            </div>
-          </div>
-          <div className="card">
-            <div className="cards-contenid">
-              <label>02</label>
-              <h3>Client-Centered Ethos</h3>
-              <span className="span-card">
-                We believe that the success of our clients is our success, and
-                we are committed to building long-term relationships based on
-                trust, integrity, and transparency
-              </span>
-            </div>
-          </div>
-          <div className="card">
-            <div className="cards-contenid">
-              <label>03</label>
-              <h3>Local Expertise</h3>
-              <span className="span-card">
-                We combine our global reach with local expertise to provide our
-                clients with insights and advice that are tailored to the
-                specific market dynamics in their region.
-              </span>
-            </div>
-          </div>
+        <div className="nosotros-contenid">
+          <h2 className="title-container">Global Reach</h2>
+          <span>
+            Cain-Surrey Capital has a global presence and we have a deep
+            understanding of the local market dynamics in various regions. As a
+            member of Cain-Surrey Capital, you can benefit from our global reach
+            and expertise, and tap into new markets and opportunities that can
+            help you grow your business.
+          </span>
+        </div>
+
+        <div className="nosotros-contenid">
+          <h2 className="title-container">Trust and Integrity</h2>
+          <span>
+            We believe that trust and integrity are the foundation of our
+            business, and we are committed to maintaining the highest ethical
+            standards in everything we do. When you become a member of
+            Cain-Surrey Capital, you can trust that we will always act in your
+            best interest.
+          </span>
+        </div>
+      </div>
+
+      <div className="nosotros-cards">
+        <div className="card">
+          <h2>Innovative Approach</h2>
+          <span>
+            We combine our extensive experience and knowledge with cutting-edge
+            technology to develop customized solutions that help our clients
+            achieve their goals.
+          </span>
+        </div>
+        <div className="card">
+          <h2>Client-Centered Ethos</h2>
+          <span>
+            We believe that the success of our clients is our success, and we
+            are committed to building long-term relationships based on trust,
+            integrity, and transparency
+          </span>
+        </div>
+        <div className="card">
+          <h2>Local Expertise</h2>
+          <span>
+            We combine our global reach with local expertise to provide our
+            clients with insights and advice that are tailored to the specific
+            market dynamics in their region.
+          </span>
         </div>
       </div>
     </div>
