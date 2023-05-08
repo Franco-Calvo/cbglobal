@@ -10,7 +10,7 @@ export default function Index() {
       <Navbar/>
       {/* <Home /> */}
       {/* <Nosotros /> */}
-      {/* <Contacto /> */}
+      <Contacto />
     </>
   );
 }

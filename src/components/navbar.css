@@ -6,41 +6,51 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-
   gap: 20rem;
 }
 
-.navbar .arrow-left {
+.navbarClosed {
+  width: 100%;
+  height: 8vh;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20rem;
+}
+
+.arrow-left {
   display: none;
 }
 
-.navbar .container-nav .arrow-right {
+.arrow-right {
   display: none;
 }
 
-.navbar .logo-blue {
+.logo-blue {
   width: 6%;
 }
 
-.navbar .logo-white {
+.logo-white {
   display: none;
 }
 
-.navbar .container-nav {
+.container-nav {
   width: 15%;
 
   display: flex;
   justify-content: space-around;
 }
 
-.navbar .container-nav .anchor {
+.anchor {
   text-decoration: none;
   color: #000;
   display: inline-block;
   position: relative;
 }
 
-.navbar .container-nav .anchor:after {
+.anchor:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -53,16 +63,16 @@
   transition: transform 0.3s ease-out;
 }
 
-.navbar .container-nav .anchor:hover:after {
+.anchor:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
 
-.navbar .container-nav .anchor:hover {
+.anchor:hover {
   color: #2853ce;
 }
 
-.navbar .button-contact {
+.button-contact {
   text-align: center;
   text-decoration: none;
   color: #2853ce;
@@ -71,64 +81,102 @@
   padding: 0.5rem;
 }
 
-.navbar .button-contact:hover {
+.button-contact:hover {
   background-color: #2853ce;
   color: #ffffff;
   transition: 400ms all;
 }
 
+.buttonClosed {
+  display: none;
+}
+
+.buttonNav {
+  display: none;
+}
+
 @media (max-width: 425px) {
-  .navbarClosed{
-    display: none;
+  .buttonNav {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    z-index: 100;
+    color: white;
+    font-size: 1.2rem;
+    visibility: visible;
+    animation: fadeIn 3s ease-in;
+  }
+  .buttonBlue {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    z-index: 100;
+    color: #2853ce;
+    font-size: 1.5rem;
   }
 
-  .buttonClosed{
-    display: none;
+  .containerLogo {
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
   }
 
   .buttonNav {
     display: flex;
   }
 
-  .navbar .logo-white {
-    width: 5rem;
+  .logo-white {
+    width: 6rem;
     display: flex;
     position: absolute;
     top: 1rem;
   }
 
-  .navbar {
-    width: 50%;
+  .navbarClosed {
+    width: 60%;
     height: 100vh;
     background-color: #2853ce;
     flex-direction: column;
     justify-content: flex-start;
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
     gap: 0;
+    position: fixed;
+    transform: translateX(100%) !important;
+    transition: transform .5s ease-in-out;
+    overflow-x: hidden;
   }
 
-  .navbar .container-nav {
+  .navbar {
+    width: 60%;
+    height: 100vh;
+    background-color: #2853ce;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: fixed;
+    right: 0;
+    top: 0;
+    gap: 0;
+    transition: .5s ease all;
+    transform: translateX(0);
+  }
+
+  .container-nav {
     width: 100%;
     height: 100%;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
     gap: 1rem;
     margin-top: 4rem;
-    margin-left: 1rem;
   }
 
-  .navbar .container-nav .anchor {
-    color: #ffffff;
-  }
-
-  .navbar .button-contact {
+  .button-contact {
     display: none;
   }
 
-  .navbar .menu-burguer {
+  .menu-burguer {
     display: flex;
     color: #ffffff;
     font-size: 1.5rem;
@@ -137,28 +185,32 @@
     right: 15px;
   }
 
-  .navbar .container-nav .anchor {
-    width: 100%;
+  .anchor {
+    width: 90%;
     display: flex;
     align-items: center;
+    color: #ffffff;
   }
 
-  .navbar .container-nav .arrow-right {
+  .arrow-right {
     display: flex;
     position: absolute;
     right: 1rem;
   }
 
-  .navbar .arrow-left {
+  .arrow-left {
     display: flex;
-    top: 50%;
-    left: -1.1rem;
+    justify-content: center;
+    align-items: center;
+    top: 15px;
+    left: 15px;
     position: absolute;
     color: #000000;
-    background-color: rgba(126, 123, 123, 0.63);
+    background-color: rgb(255, 255, 255);
     border: 1px solid rgba(128, 128, 128, 0.815);
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     border-radius: 100%;
     padding: 5px;
+    z-index: 1000000;
   }
 }
