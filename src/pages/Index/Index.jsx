@@ -8,9 +8,9 @@ export default function Index() {
   return (
     <>
       <Navbar/>
-      <Home />
+      {/* <Home /> */}
       {/* <Nosotros /> */}
-      <Contacto />
+      {/* <Contacto /> */}
     </>
   );
 }
