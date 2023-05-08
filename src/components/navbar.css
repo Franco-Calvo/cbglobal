@@ -87,13 +87,14 @@
   transition: 400ms all;
 }
 
-.buttonClosed {
+.buttonBlue {
   display: none;
 }
 
 .buttonNav {
   display: none;
 }
+
 
 @media (max-width: 425px) {
   .buttonNav {
@@ -113,6 +114,7 @@
     z-index: 100;
     color: #2853ce;
     font-size: 1.5rem;
+    display: flex;
   }
 
   .containerLogo {
