@@ -9,9 +9,10 @@ export default function Index() {
   return (
     <>
       <Navbar/>
-      {/* <Home /> */}
-      {/* <Nosotros /> */}
-      {/* <Contacto /> */}
+      <Home />
+      <Nosotros />
+      <Contacto />
+      <Footer />
     </>
   );
 }
