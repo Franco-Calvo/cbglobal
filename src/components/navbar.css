@@ -10,8 +10,20 @@
   gap: 20rem;
 }
 
-.navbar img {
+.navbar .arrow-left {
+  display: none;
+}
+
+.navbar .container-nav .arrow-right {
+  display: none;
+}
+
+.navbar .logo-blue {
   width: 6%;
+}
+
+.navbar .logo-white {
+  display: none;
 }
 
 .navbar .container-nav {
@@ -63,4 +75,90 @@
   background-color: #2853ce;
   color: #ffffff;
   transition: 400ms all;
+}
+
+@media (max-width: 425px) {
+  .navbarClosed{
+    display: none;
+  }
+
+  .buttonClosed{
+    display: none;
+  }
+
+  .buttonNav {
+    display: flex;
+  }
+
+  .navbar .logo-white {
+    width: 5rem;
+    display: flex;
+    position: absolute;
+    top: 1rem;
+  }
+
+  .navbar {
+    width: 50%;
+    height: 100vh;
+    background-color: #2853ce;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    right: 0;
+    top: 0;
+    gap: 0;
+  }
+
+  .navbar .container-nav {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-top: 4rem;
+    margin-left: 1rem;
+  }
+
+  .navbar .container-nav .anchor {
+    color: #ffffff;
+  }
+
+  .navbar .button-contact {
+    display: none;
+  }
+
+  .navbar .menu-burguer {
+    display: flex;
+    color: #ffffff;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+
+  .navbar .container-nav .anchor {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar .container-nav .arrow-right {
+    display: flex;
+    position: absolute;
+    right: 1rem;
+  }
+
+  .navbar .arrow-left {
+    display: flex;
+    top: 50%;
+    left: -1.1rem;
+    position: absolute;
+    color: #000000;
+    background-color: rgba(126, 123, 123, 0.63);
+    border: 1px solid rgba(128, 128, 128, 0.815);
+    font-size: 1.5rem;
+    border-radius: 100%;
+    padding: 5px;
+  }
 }
