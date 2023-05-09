@@ -2,9 +2,8 @@ import React from "react";
 import "./home.css";
 import { FaArrowRight } from "react-icons/fa";
 import { Link as Anchor } from "react-router-dom";
-import Oficina1 from "../../images/Oficina1.png";
-import Oficina2 from "../../images/imagen01.png";
-
+import image from "../../images/Financial.png";
+import imagetwo from "../../images/financial02.jpg";
 export default function Home() {
   return (
     <div className="HomeContainer">
@@ -32,10 +31,10 @@ export default function Home() {
 
       <div className="content-images-home">
         <div className="image">
-          <img src={Oficina2} alt="Imagen de oficina numero 2" />
+          <img src={image} alt="Imagen de oficina numero 2" />
         </div>
-        <div className="image">
-          <img src={Oficina2} alt="Imagen de oficina numero 2" />
+        <div className="image image-two">
+          <img src={imagetwo} alt="Imagen de oficina numero 2" />
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import "./nosotros.css";
-import image from "../../images/Image.png";
+
 
 export default function Nosotros() {
   return (
@@ -12,73 +12,55 @@ export default function Nosotros() {
 
       <div className="nosotros-container">
         <div className="nosotros-contenid">
-          <h2 className="title-container">Access to Enterprise</h2>
+          <h2 className="title-container">Quienes somos:</h2>
           <span>
-            As a member of Cain-Surrey Capital you will have access to our team
-            of experts who have extensive experience and knowledge in various
-            industries and financial services. Our experts are always available
-            to provide insights, guidance, and advice to help you make informed
-            decisions that can drive your business forward.
+            Somos una organización comprometida en brindar soluciones
+            financieras a nuestros clientes, basadas en la excelencia, la
+            transparencia y el compromiso.
           </span>
-        </div>
-
-        <div className="nosotros-contenid">
-          <h2 className="title-container">Customized Solutions</h2>
           <span>
-            As a member of Cain-Surrey Capital, you will have access to our team
-            of experts who have extensive experience and knowledge in various
-            industries and financial services. Our experts are always available
-            to provide insights, guidance, and advice to help you make informed
-            decisions that can drive your business forward.
+            Contamos con un equipo de expertos altamente calificados en
+            finanzas, inversiones y seguros, con años de experiencia en el
+            sector financiero. Nuestra capacidad para entender las necesidades
+            de nuestros clientes y crear soluciones personalizadas nos distingue
+            de la competencia.
           </span>
-        </div>
 
-        <div className="nosotros-contenid">
-          <h2 className="title-container">Global Reach</h2>
           <span>
-            Cain-Surrey Capital has a global presence and we have a deep
-            understanding of the local market dynamics in various regions. As a
-            member of Cain-Surrey Capital, you can benefit from our global reach
-            and expertise, and tap into new markets and opportunities that can
-            help you grow your business.
-          </span>
-        </div>
-
-        <div className="nosotros-contenid">
-          <h2 className="title-container">Trust and Integrity</h2>
-          <span>
-            We believe that trust and integrity are the foundation of our
-            business, and we are committed to maintaining the highest ethical
-            standards in everything we do. When you become a member of
-            Cain-Surrey Capital, you can trust that we will always act in your
-            best interest.
+            En nuestra empresa, valoramos la integridad y la transparencia en
+            todo lo que hacemos. Trabajamos diligentemente para asegurarnos de
+            que nuestros clientes comprendan completamente sus opciones
+            financieras y las consecuencias de cada una de ellas.
           </span>
         </div>
       </div>
 
       <div className="nosotros-cards">
         <div className="card">
-          <h2>Innovative Approach</h2>
+          <h2>Mision</h2>
           <span>
-            We combine our extensive experience and knowledge with cutting-edge
-            technology to develop customized solutions that help our clients
-            achieve their goals.
+            Estamos comprometidos en construir relaciones a largo plazo con
+            nuestros clientes, basadas en la confianza y el respeto mutuo. Nos
+            enorgullece nuestra capacidad para ayudar a nuestros clientes a
+            alcanzar sus objetivos financieros y estamos ansiosos de trabajar
+            con usted para hacer lo mismo.
           </span>
         </div>
         <div className="card">
-          <h2>Client-Centered Ethos</h2>
+          <h2>Servicios</h2>
           <span>
-            We believe that the success of our clients is our success, and we
-            are committed to building long-term relationships based on trust,
-            integrity, and transparency
+            Nuestro objetivo es ofrecer una amplia gama de servicios financieros
+            a individuos y empresas, incluyendo asesoramiento financiero
+            personalizado, planificación de jubilación, inversión en el mercado
+            de valores, gestión de activos, seguros, y mucho más.
           </span>
         </div>
         <div className="card">
-          <h2>Local Expertise</h2>
           <span>
-            We combine our global reach with local expertise to provide our
-            clients with insights and advice that are tailored to the specific
-            market dynamics in their region.
+            Gracias por considerar nuestra empresa para sus necesidades
+            financieras. Esperamos tener la oportunidad de ayudarle a alcanzar
+            sus objetivos financieros y alcanzar la estabilidad financiera que
+            busca.
           </span>
         </div>
       </div>
