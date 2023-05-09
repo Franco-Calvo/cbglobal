@@ -17,11 +17,11 @@
 }
 
 .title-one {
-  color: black;
+  color: var(--color-letters);
 }
 
 .title-two {
-  color: #0536e3;
+  color: var(--color-secondary);
 }
 
 h2 {
@@ -82,11 +82,11 @@ h2 {
   width: 100%;
   flex-direction: column;
   justify-content: space-around;
-  border: 1px black;
-  background-color: #151515;
+  border: 1px var(--color-letters);
+  background-color: var(--color-background-2);
   height: 4.5rem;
   padding: 1rem;
-  color: white;
+  color: var(--color-primary);
   border-radius: 10px;
 }
 
