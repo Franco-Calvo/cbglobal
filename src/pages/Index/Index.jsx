@@ -8,11 +8,11 @@ import Footer from "../../components/Footer/Footer";
 export default function Index() {
   return (
     <>
-      {/* <Navbar /> */}
-      {/* <Home /> */}
+      <Navbar />
+      <Home />
       <Nosotros />
-      {/* <Contacto /> */}
-      {/* <Footer /> */}
+      <Contacto />
+      <Footer />
     </>
   );
 }

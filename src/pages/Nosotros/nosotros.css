@@ -39,6 +39,7 @@ h2 {
   height: auto;
   flex-wrap: wrap;
   gap: 1rem;
+  padding: 8px 0px;
 }
 
 .nosotros-contenid {
