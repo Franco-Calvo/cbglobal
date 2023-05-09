@@ -8,6 +8,10 @@
   --color-background-1: rgb(255, 255, 255);
   --color-background-2: #151515;
   --color-border-1: rgba(128, 128, 128, 0.815);
+  --light: #d8dbe0;
+  --dark: #28292c;
+  --link: rgb(27, 129, 112);
+  --link-hover: rgb(24, 94, 82);
 }
 
 * {
