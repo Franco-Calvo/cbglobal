@@ -21,7 +21,7 @@
 }
 
 .home-tittle h1 span {
-  color: #2853ce;
+  color: var(--color-secondary);
 }
 
 .home-content {
@@ -37,7 +37,8 @@
   text-align: justify;
   text-justify: inter-word;
   letter-spacing: -0.05em;
-  font-weight: 300;
+  font-weight: 500;
+  color: var(--color-description)
 }
 
 .home-content .button-info {
@@ -48,15 +49,15 @@
   gap: 0.4rem;
   padding: 0.8rem;
   text-decoration: none;
-  color: #ffffff;
-  background-color: #2853ce;
-  border: 2px solid #2853ce;
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+  border: 2px solid var(--color-secondary);
   border-radius: 2rem;
 }
 
 .home-content .button-info:hover {
-  background-color: #ffffff;
-  color: #2853ce;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
   transition: 400ms all;
 }
 
@@ -69,7 +70,6 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  border: 1px solid blue;
 }
 
 .image {
