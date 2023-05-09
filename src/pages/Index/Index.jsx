@@ -8,7 +8,7 @@ import Footer from "../../components/Footer/Footer";
 export default function Index() {
   return (
     <>
-      <Navbar/>
+      <Navbar />
       <Home />
       <Nosotros />
       <Contacto />
