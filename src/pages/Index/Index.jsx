@@ -10,8 +10,9 @@ export default function Index() {
     <>
       <Navbar/>
       <Home />
-      {/* <Nosotros /> */}
-      {/* <Contacto /> */}
+      <Nosotros />
+      <Contacto />
+      <Footer />
     </>
   );
 }

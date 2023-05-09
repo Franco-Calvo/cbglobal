@@ -32,15 +32,15 @@
   width: 6%;
 }
 
-.logo-white {
+.containerLogo {
   display: none;
 }
 
 .container-nav {
   width: 15%;
-
   display: flex;
   justify-content: space-around;
+  gap: 1rem;
 }
 
 .anchor {
@@ -95,6 +95,36 @@
   display: none;
 }
 
+
+@media (max-width: 1024px) {
+  .logo-blue {
+    width: 9%;
+  }
+
+  .navbarClosed {
+    gap: 10rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .logo-blue {
+    width: 12%;
+  }
+
+  .navbarClosed {
+    gap: 5.5rem;
+  }
+
+  .container-nav {
+    gap: .5rem;
+    font-size: .9rem;
+  }
+
+  .button-contact {
+    font-size: .8rem;
+  }
+}
 
 @media (max-width: 425px) {
   .buttonNav {
