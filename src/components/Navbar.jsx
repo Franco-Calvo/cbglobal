@@ -43,9 +43,24 @@ export default function Navbar() {
             Contacto
             <FaChevronRight className="arrow-right" />
           </Anchor>
+          <div className="anchor-theme">
+            <form className="form">
+                <label for="01">Modo Oscuro</label>
+                <input id="01" type="button"/>
+            </form>
+          </div>
         </div>
 
-        <Anchor className="button-contact">Contáctanos</Anchor>
+        <div className="buttons-container">
+          <div className="toggle-switch">
+            <label className="switch-label">
+              <input type="checkbox" className="checkbox"/>
+              <span className="slider"></span>
+            </label>
+          </div> 
+          <Anchor className="button-contact">Contáctanos</Anchor>
+        </div>
+
       </div>
     </>
   );
