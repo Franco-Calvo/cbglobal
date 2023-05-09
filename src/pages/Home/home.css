@@ -5,8 +5,9 @@
   align-items: center;
   flex-direction: column;
   gap: 1rem;
-  border: 1px solid red;
+  margin-top: 3rem;
 }
+
 /*Title*/
 .home-tittle {
   width: 90%;
