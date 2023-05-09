@@ -36,9 +36,9 @@ export default function Footer() {
             </div>
 
             <div className="about-links">
-              <Anchor>About</Anchor>
-              <Anchor>About</Anchor>
-              <Anchor>About</Anchor>
+              <Anchor>Acerca</Anchor>
+              <Anchor>Acerca</Anchor>
+              <Anchor>Acerca</Anchor>
             </div>
           </div>
 
