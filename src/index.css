@@ -2,17 +2,30 @@
 
 :root {
   --color-primary: #ffffff;
-  --color-secondary: #2853ce;
-  --color-letters: #000000;
+  --color-background: #161616;
+  --color-blue: #2853ce;
   --color-description: #777777;
-  --color-background-1: rgb(255, 255, 255);
-  --color-background-2: #151515;
-  --color-border-1: rgba(128, 128, 128, 0.815);
+  --switch-light: #d8dbe0;
+  --switch-dark: #28292c;
+  --card-background: #2e2e2e;
+}
+
+[data-theme="dark"] {
+  --color-primary: #000000;
+  --color-blue: #2853ce;
+  --color-blueHover: #1e43a7;
+  --color-background: #ececec;
+  --color-description: #777777;
+  --switch-light: #d8dbe0;
+  --switch-dark: #28292c;
+  --card-background: #151515;
 }
 
 * {
+  background: var(--color-background);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  transition: all 0.8s ease-in-out;
 }
