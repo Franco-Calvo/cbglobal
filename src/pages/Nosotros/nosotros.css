@@ -99,7 +99,9 @@ h2 {
 .card span {
   font-size: 16px;
 }
-
+.MdOutlineMiscellaneousServices {
+  margin-right: 3px;
+}
 /*Responsive*/
 
 @media (max-width: 1300px) {

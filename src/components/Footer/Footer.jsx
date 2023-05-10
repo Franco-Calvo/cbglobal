@@ -15,26 +15,6 @@ export default function Footer() {
       <div className="footer-about">
         <div className="box-about">
           <div className="box-soicons">
-            <div className="about-social">
-              <Anchor>
-                <span className="icons">
-                  <FaInstagram />
-                </span>
-              </Anchor>
-
-              <Anchor>
-                <span className="icons">
-                  <FaTwitter />
-                </span>
-              </Anchor>
-
-              <Anchor>
-                <span className="icons">
-                  <FaWhatsapp />
-                </span>
-              </Anchor>
-            </div>
-
             <div className="about-links">
               <Anchor>Acerca</Anchor>
               <Anchor>Acerca</Anchor>

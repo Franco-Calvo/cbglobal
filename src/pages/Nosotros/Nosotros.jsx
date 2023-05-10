@@ -1,6 +1,7 @@
 import React from "react";
 import "./nosotros.css";
-
+import { TbTargetArrow } from "react-icons/tb";
+import { MdOutlineMiscellaneousServices } from "react-icons/md";
 
 export default function Nosotros() {
   return (
@@ -37,7 +38,9 @@ export default function Nosotros() {
 
       <div className="nosotros-cards">
         <div className="card">
-          <h2>Mision</h2>
+          <h2>
+            <TbTargetArrow className="TbTargetArrow" /> Mision
+          </h2>
           <span>
             Estamos comprometidos en construir relaciones a largo plazo con
             nuestros clientes, basadas en la confianza y el respeto mutuo. Nos
@@ -47,7 +50,10 @@ export default function Nosotros() {
           </span>
         </div>
         <div className="card">
-          <h2>Servicios</h2>
+          <h2>
+            <MdOutlineMiscellaneousServices className="MdOutlineMiscellaneousServices" />
+            Servicios
+          </h2>
           <span>
             Nuestro objetivo es ofrecer una amplia gama de servicios financieros
             a individuos y empresas, incluyendo asesoramiento financiero
