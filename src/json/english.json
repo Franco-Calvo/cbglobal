@@ -20,23 +20,19 @@
   },
 
   "nosotros-contenid":{
-    "TITULO-UNO": "Access to Enterprise",
-    "SPAN-UNO": "As a member of Cain-Surrey Capital you will have access to our team of experts who have extensive experience and knowledge in various industries and financial services. Our experts are always available to provide insights, guidance, and advice to help you make informed decisions that can drive your business forward.",
-    "TITULO-DOS": "Customized Solutions",
-    "SPAN-DOS": "As a member of Cain-Surrey Capital, you will have access to our team of experts who have extensive experience and knowledge in various industries and financial services. Our experts are always available to provide insights, guidance, and advice to help you make informed decisions that can drive your business forward.",
-    "TITULO-TRES": "Global Reach",
-    "SPAN-TRES": "Cain-Surrey Capital has a global presence and we have a deep understanding of the local market dynamics in various regions. As a member of Cain-Surrey Capital, you can benefit from our global reach and expertise, and tap into new markets and opportunities that can help you grow your business.",
-    "TITULO-CUATRO": "Trust and Integrity",
-    "SPAN-CUATRO": " We believe that trust and integrity are the foundation of our business, and we are committed to maintaining the highest ethical standards in everything we do. When you become a member of Cain-Surrey Capital, you can trust that we will always act in your best interest." 
+    "TITULO-UNO": "Who we are",
+    "SPAN-UNO": "We are an organization committed to providing financial solutions to our clients, based on excellence, transparency and commitment.",
+    "SPAN-DOS": "We have a team of highly qualified financial, investment and insurance experts with years of experience in the financial sector. Our ability to understand our clients' needs and create customized solutions sets us apart from the competition.",
+    "SPAN-TRES": "At our firm, we value integrity and transparency in everything we do. We work diligently to ensure that our clients fully understand their financial options and the consequences of each."
+    
   },
 
   "nosotros-card":{
-    "TITLE-CARD-UNO":"Innovative Approach",
-    "SPAN-CARD-UNO" : "We combine our extensive experience and knowledge with cutting-edge technology to develop customized solutions that help our clients achieve their goals.",
-    "TITLE-CARD-DOS":"Client-Centered Ethos",
-    "SPAN-CARD-DOS" : "We believe that the success of our clients is our success, and we are committed to building long-term relationships based on trust, integrity, and transparency",
-    "TITLE-CARD-TRES":"Local Expertise",
-    "SPAN-CARD-TRES" : "We combine our global reach with local expertise to provide our clients with insights and advice that are tailored to the specific market dynamics in their region."
+    "TITLE-CARD-UNO":"Mision",
+    "TITLE-CARD-DOS":"Services",
+    "SPAN-CARD-UNO" : "We are committed to building long-term relationships with our clients based on trust and mutual respect. We pride ourselves on our ability to help our clients achieve their financial goals and look forward to working with you to do the same.",
+    "SPAN-CARD-DOS" : "Our goal is to offer a wide range of financial services to individuals and businesses, including personalized financial advice, retirement planning, stock market investing, asset management, insurance, and much more.",
+    "SPAN-CARD-TRES" : "Thank you for considering our company for your financial needs. We look forward to the opportunity to help you achieve your financial goals and attain the financial stability you seek."
 
   },
 

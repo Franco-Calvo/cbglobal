@@ -3,7 +3,12 @@ import "./home.css";
 import { FaArrowRight } from "react-icons/fa";
 import { Link as Anchor } from "react-router-dom";
 import image from "../../images/Financial.png";
+<<<<<<< HEAD
+import imagetwo from "../../images/finanzas.jpg";
+
+=======
 import imagetwo from "../../images/financial02.jpg";
+>>>>>>> 7d77d8fae3398c827e1e5424ef021406bbe844c2
 export default function Home() {
   return (
     <div className="HomeContainer">
