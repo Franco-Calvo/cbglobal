@@ -5,7 +5,7 @@
   width: 100%;
   color: var(--color-primary);
   flex-direction: column;
-  background-color: var(--color-secondary);
+  background-color: var(--color-blue);
   justify-content: center;
   align-items: center;
 }
@@ -15,6 +15,8 @@
   width: 100%;
   align-items: center;
   justify-content: center;
+  color: var(--color-primary);
+  background-color: var(--color-blue);
 }
 
 .footer-h {
@@ -22,6 +24,8 @@
   display: flex;
   width: 90%;
   font-size: 2rem;
+  color: var(--color-primary);
+  background-color: var(--color-blue);
 }
 
 .footer-about {
@@ -30,6 +34,8 @@
   align-items: center;
   justify-content: center;
   margin-bottom: -30px;
+  color: var(--color-primary);
+  background-color: var(--color-blue);
 }
 
 .box-about {
@@ -39,24 +45,24 @@
   width: 90%;
   height: 10vh;
   align-items: center;
+  color: var(--color-primary);
+  background-color: var(--color-blue);
 }
 
 .about-links {
   display: flex;
   gap: 1.25rem;
   font-size: 1.2rem;
+  color: var(--color-primary);
+  background-color: var(--color-blue);
+
   width: 60%;
 }
 
 .about-links a {
   text-decoration: none;
   color: var(--color-primary);
-}
-
-.about-social {
-  display: flex;
-  width: 40%;
-  gap: 1.25rem;
+  background-color: var(--color-blue);
 }
 
 .about-rights {
@@ -64,11 +70,13 @@
   font-size: 1.2rem;
   width: 40%;
   justify-content: end;
+  color: var(--color-primary);
+  background-color: var(--color-blue);
 }
 
-.icons {
+.p-rights {
   color: var(--color-primary);
-  font-size: 1.2rem;
+  background-color: var(--color-blue);
 }
 
 .box-soicons {
@@ -76,6 +84,8 @@
   justify-content: space-between;
   align-items: center;
   width: 60%;
+  color: var(--color-primary);
+  background-color: var(--color-blue);
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {

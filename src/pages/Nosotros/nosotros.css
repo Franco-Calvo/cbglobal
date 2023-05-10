@@ -17,11 +17,11 @@
 }
 
 .title-one {
-  color: var(--color-letters);
+  color: var(--color-primary);
 }
 
 .title-two {
-  color: var(--color-secondary);
+  color: var(--color-blue);
 }
 
 h2 {
@@ -55,17 +55,19 @@ h2 {
   display: flex;
   justify-content: flex-start;
   width: 100%;
-  font-weight: 400;
+  color: var(--color-primary);
+  font-weight: 450;
 }
 
 .card span {
   font-size: 20px;
-  font-weight: lighter;
+  font-weight: 300;
 }
 
 .nosotros-contenid span {
   font-size: 26px;
-  font-weight: lighter;
+  font-weight: 300;
+  color: var(--color-primary);
 }
 
 /*Cards*/
@@ -84,22 +86,30 @@ h2 {
   width: 100%;
   flex-direction: column;
   justify-content: space-around;
-  border: 1px var(--color-letters);
-  background-color: var(--color-background-2);
+  border: 1px var(--color-primary);
+  background-color: var(--card-background);
   height: 7rem;
   padding: 1.5rem;
-  color: var(--color-primary);
+  color: var(--switch-light);
   border-radius: 10px;
 }
 
 .card h2 {
   font-size: 1.2rem;
+  background-color: var(--card-background);
+}
+
+.card span {
+  font-size: 16px;
+  background-color: var(--card-background);
 }
 
 .card span {
   font-size: 16px;
 }
-
+.MdOutlineMiscellaneousServices {
+  margin-right: 3px;
+}
 /*Responsive*/
 
 @media (max-width: 1300px) {
