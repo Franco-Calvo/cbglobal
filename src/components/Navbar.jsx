@@ -6,7 +6,7 @@ import "./navbar.css";
 import { FaBars } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa";
 
-export default function Navbar() {
+export default function Navbar({ productRef }) {
   const [isOpen, setIsOpen] = useState(true);
   const [isButton, setIsButton] = useState(true);
 
@@ -38,6 +38,23 @@ export default function Navbar() {
 
   setDarkMode();
 
+  const scrollToNextView = (e) => {
+    e.preventDefault();
+    productRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToUp = () => {
+    const scrollStep = window.scrollY / 15;
+    const scrollInterval = window.requestAnimationFrame(() => {
+      if (window.scrollY !== 0) {
+        window.scrollTo(0, window.scrollY - scrollStep);
+        scrollToUp();
+      } else {
+        window.cancelAnimationFrame(scrollInterval);
+      }
+    });
+  };
+
   return (
     <>
       <div
@@ -47,29 +64,29 @@ export default function Navbar() {
         <FaBars />
       </div>
 
-      <div className={isOpen ? "navbarClosed" : "navbar" && "dark-mode"}>
+      <div className={isOpen ? "navbarClosed" : "navbar"}>
         <img src={Logo} className="logo-blue" alt="Logo CB Global" />
         <div className="containerLogo">
           <img src={LogoBlanco} className="logo-white" alt="Logo CB Global" />
         </div>
 
         <div className="container-nav">
-          <Anchor className="anchor">
+          <Anchor onClick={scrollToUp} className="anchor">
             Inicio
             <FaChevronRight className="arrow-right" />
           </Anchor>
-          <Anchor className="anchor">
+          <Anchor onClick={scrollToNextView} className="anchor">
             Nosotros
             <FaChevronRight className="arrow-right" />
           </Anchor>
-          <Anchor className="anchor">
+          <Anchor onClick={scrollToNextView} className="anchor">
             Contacto
             <FaChevronRight className="arrow-right" />
           </Anchor>
-          <div className="anchor-theme">
+          <div className="anchor">
             <form className="form">
               <label for="01">Modo Oscuro</label>
-              <input id="01" type="button" />
+              <input onClick={toggleTheme} id="01" type="button" />
             </form>
           </div>
         </div>
