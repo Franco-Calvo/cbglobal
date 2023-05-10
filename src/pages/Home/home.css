@@ -72,7 +72,6 @@
 
 .content-images-home {
   width: 90%;
-  min-height: 500px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -120,7 +119,6 @@
 
   .content-images-home {
     flex-direction: column;
-    margin-top: -60px;
   }
 
   .image {
@@ -154,6 +152,12 @@
   @media (max-width: 470px) {
     .home-tittle h1 {
       font-size: 3.5rem;
+    }
+  }
+
+  @media (max-width: 425px) {
+    .HomeContainer {
+      margin-top: 0;
     }
   }
 }

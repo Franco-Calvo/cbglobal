@@ -152,7 +152,7 @@ h2 {
     font-size: 35px;
   }
   .card {
-    height: 6rem;
+    height: 6.5rem;
   }
 
   h2 {
@@ -178,9 +178,12 @@ h2 {
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 360px) {
   h2 {
     font-size: 2rem;
-    margin-top: 40px;
+  }
+
+  .card {
+    height: 7rem;
   }
 }

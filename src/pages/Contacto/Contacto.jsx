@@ -1,10 +1,13 @@
 import React from "react";
 import "./contacto.css";
 import { FaArrowRight } from "react-icons/fa";
+import { useRef } from "react";
+import Navbar from "../../components/Navbar";
 
 export default function Contacto() {
+  const productRef = useRef(null);
   return (
-    <div className="contact-container">
+    <div productRef={productRef} ref={productRef} className="contact-container">
       <div className="info-top">
         <h4>
           Comunícate con <span>nosotros.</span>

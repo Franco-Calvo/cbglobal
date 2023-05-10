@@ -2,10 +2,13 @@ import React from "react";
 import "./nosotros.css";
 import { TbTargetArrow } from "react-icons/tb";
 import { MdOutlineMiscellaneousServices } from "react-icons/md";
+import { useRef } from "react";
+import Navbar from "../../components/Navbar";
 
 export default function Nosotros() {
+  const productRef = useRef(null);
   return (
-    <div className="HomeNosotros">
+    <div productRef={productRef} ref={productRef} className="HomeNosotros">
       <div className="nosotros-title">
         <h2 className="title-one">Sobre</h2>
         <h2 className="title-two">Nosotros</h2>
@@ -13,7 +16,6 @@ export default function Nosotros() {
 
       <div className="nosotros-container">
         <div className="nosotros-contenid">
-          <h2 className="title-container">Quienes somos:</h2>
           <span>
             Somos una organización comprometida en brindar soluciones
             financieras a nuestros clientes, basadas en la excelencia, la
