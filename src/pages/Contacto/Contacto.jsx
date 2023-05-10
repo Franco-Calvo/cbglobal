@@ -31,7 +31,7 @@ export default function Contacto() {
           <input type="tel" />
         </span>
 
-        <button type="submit">
+        <button type="submit" className="buttonComuni">
           Comunicarse
           <FaArrowRight className="arrow-contact" />
         </button>

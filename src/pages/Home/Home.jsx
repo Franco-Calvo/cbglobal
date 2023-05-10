@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="HomeContainer">
       <div className="home-tittle">
-        <h1>
+        <h1 className="titleh1">
           CB <span>Global.</span>
         </h1>
       </div>

@@ -6,7 +6,11 @@
   flex-direction: column;
   gap: 1rem;
   margin-top: 3rem;
-  border: 1px solid red;
+}
+
+.arrow-info {
+  background: none;
+  color: var(--switch-light);
 }
 
 /*Title*/
@@ -19,10 +23,11 @@
 
 .home-tittle h1 {
   font-size: 10rem;
+  color: var(--color-primary);
 }
 
 .home-tittle h1 span {
-  color: var(--color-secondary);
+  color: var(--color-blue);
 }
 
 .home-content {
@@ -39,7 +44,7 @@
   text-justify: inter-word;
   letter-spacing: -0.05em;
   font-weight: 500;
-  color: var(--color-description)
+  color: var(--color-description);
 }
 
 .home-content .button-info {
@@ -50,15 +55,15 @@
   gap: 0.4rem;
   padding: 0.8rem;
   text-decoration: none;
-  color: var(--color-primary);
-  background-color: var(--color-secondary);
-  border: 2px solid var(--color-secondary);
+  color: var(--switch-light);
+  background-color: var(--color-blue);
+  border: 2px solid var(--color-blue);
   border-radius: 2rem;
 }
 
 .home-content .button-info:hover {
-  background-color: var(--color-primary);
-  color: var(--color-secondary);
+  background-color: var(--color-blueHover);
+  color: var(--switch-light);
   transition: 400ms all;
 }
 
