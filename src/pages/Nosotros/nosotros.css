@@ -107,7 +107,13 @@ h2 {
 .card span {
   font-size: 16px;
 }
+
+.TbTargetArrow {
+  background-color: var(--card-background);
+}
+
 .MdOutlineMiscellaneousServices {
+  background-color: var(--card-background);
   margin-right: 3px;
 }
 /*Responsive*/
