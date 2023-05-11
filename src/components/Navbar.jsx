@@ -5,10 +5,12 @@ import LogoBlanco from "../images/CB Global White. (1).png";
 import "./navbar.css";
 import { FaBars } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa";
+import { Trans, useTranslation } from "react-i18next";
 
 export default function Navbar({ productRef }) {
   const [isOpen, setIsOpen] = useState(true);
   const [isButton, setIsButton] = useState(true);
+  const { t } = useTranslation();
 
   function handleToggleNav() {
     setIsButton(!isButton);
@@ -72,7 +74,7 @@ export default function Navbar({ productRef }) {
 
         <div className="container-nav">
           <Anchor onClick={scrollToUp} className="anchor">
-            Inicio
+            {t(navbar.NAVINICIO)}
             <FaChevronRight className="arrow-right" />
           </Anchor>
           <Anchor onClick={scrollToNextView} className="anchor">
