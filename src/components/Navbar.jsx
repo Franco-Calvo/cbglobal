@@ -63,7 +63,7 @@ export default function Navbar({ productRef }) {
         className={isButton ? "buttonBlue" : "buttonNav"}
         onClick={handleToggleNav}
       >
-        <FaBars />
+        <FaBars className="FaBars"/>
       </div>
 
       <div className={isOpen ? "navbarClosed" : "navbar"}>

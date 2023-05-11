@@ -44,7 +44,7 @@
   text-justify: inter-word;
   letter-spacing: -0.05em;
   font-weight: 500;
-  color: var(--color-description);
+  color: var(--color-description)
 }
 
 .home-content .button-info {
