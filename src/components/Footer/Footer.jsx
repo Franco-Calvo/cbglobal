@@ -4,8 +4,12 @@ import "./footer.css";
 import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
+import { Link } from "react-scroll";
+import { Trans, useTranslation } from "react-i18next";
 
 export default function Footer() {
+  const { t, changeLanguage, i18n } = useTranslation("globals");
+
   return (
     <div className="container-footer">
       <div className="footer-title">
@@ -16,9 +20,31 @@ export default function Footer() {
         <div className="box-about">
           <div className="box-soicons">
             <div className="about-links">
-              <Anchor>Acerca</Anchor>
-              <Anchor>Acerca</Anchor>
-              <Anchor>Acerca</Anchor>
+              <Link
+                to="seccion-1"
+                smooth={true}
+                duration={500}
+                className="anchorF"
+              >
+                {" "}
+                {t("NAV-INICIO")}
+              </Link>
+              <Link
+                to="seccion-2"
+                smooth={true}
+                duration={500}
+                className="anchorF"
+              >
+                {t("NAV-NOSOTROS")}
+              </Link>
+              <Link
+                to="seccion-3"
+                smooth={true}
+                duration={500}
+                className="anchorF"
+              >
+                {t("NAV-CONTACTO")}
+              </Link>
             </div>
           </div>
 

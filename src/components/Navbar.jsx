@@ -6,11 +6,12 @@ import "./navbar.css";
 import { FaBars } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa";
 import { Trans, useTranslation } from "react-i18next";
+import { Link } from "react-scroll";
 
 export default function Navbar({ productRef }) {
   const [isOpen, setIsOpen] = useState(true);
   const [isButton, setIsButton] = useState(true);
-  const { t } = useTranslation();
+  const { t, changeLanguage, i18n } = useTranslation("globals");
 
   function handleToggleNav() {
     setIsButton(!isButton);
@@ -45,8 +46,6 @@ export default function Navbar({ productRef }) {
     productRef?.current.scrollIntoView({ behavior: "smooth" });
   };
 
-  console.log(productRef);
-
   const scrollToUp = () => {
     const scrollStep = window.scrollY / 15;
     const scrollInterval = window.requestAnimationFrame(() => {
@@ -74,18 +73,20 @@ export default function Navbar({ productRef }) {
         </div>
 
         <div className="container-nav">
-          <Anchor className="anchor">
-            Inicio
+          <Link to="seccion-1" smooth={true} duration={500} className="anchor">
+            {t("NAV-INICIO")}
             <FaChevronRight className="arrow-right" />
-          </Anchor>
-          <Anchor onClick={scrollToNextView} className="anchor">
-            Nosotros
+          </Link>
+          <Link to="seccion-2" smooth={true} duration={500} className="anchor">
+            {t("NAV-NOSOTROS")}
+
             <FaChevronRight className="arrow-right" />
-          </Anchor>
-          <Anchor onClick={scrollToNextView} className="anchor">
-            Contacto
+          </Link>
+          <Link to="seccion-3" smooth={true} duration={500} className="anchor">
+            {t("NAV-CONTACTO")}
+
             <FaChevronRight className="arrow-right" />
-          </Anchor>
+          </Link>
         </div>
 
         <div className="buttons-container">
@@ -99,7 +100,7 @@ export default function Navbar({ productRef }) {
               <span className="slider"></span>
             </label>
           </div>
-          <Anchor className="button-contact">Contáctanos</Anchor>
+          <Anchor className="button-contact"> {t("BTN-NAV")}</Anchor>
         </div>
       </div>
     </>
