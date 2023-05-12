@@ -3,14 +3,20 @@ import "./contacto.css";
 import { FaArrowRight } from "react-icons/fa";
 import { useRef } from "react";
 import Navbar from "../../components/Navbar";
+import { useTranslation } from "react-i18next";
 
 export default function Contacto() {
-  const productRef = useRef(null);
+  const { t, changeLanguage, i18n } = useTranslation("globals");
+  const contact = useRef({});
   return (
-    <div productRef={productRef} ref={productRef} className="contact-container">
+    <div ref={contact} className="contact-container">
+      <Navbar productRef={contact?.current} />
+
       <div className="info-top">
+        <button onClick={() => i18n.changeLanguage("en")}>Tuvieja</button>
+        <button onClick={() => i18n.changeLanguage("es")}>Tuvieja</button>
         <h4>
-          Comunícate con <span>nosotros.</span>
+          {t("TITLE-COMUNICATE")} <span>nosotros.</span>
         </h4>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium,

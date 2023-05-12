@@ -4,6 +4,7 @@ import { FaArrowRight } from "react-icons/fa";
 import { Link as Anchor } from "react-router-dom";
 import image from "../../images/Financial.png";
 import imagetwo from "../../images/finanzas.jpg";
+import Navbar from "../../components/Navbar";
 
 export default function Home() {
   return (

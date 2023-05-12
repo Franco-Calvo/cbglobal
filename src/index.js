@@ -6,21 +6,15 @@ import reportWebVitals from "./reportWebVitals";
 
 import { I18nextProvider } from "react-i18next";
 import i18n from "i18next";
+import es from "./locales/es.json";
+import en from "./locales/en.json";
 
 i18n.init({
-  interpolation: { escapeValue: false }, // React ya lo hace por nosotros
-  lng: "es", // idioma por defecto
+  interpolation: { escapeValue: false },
+  lng: "es",
   resources: {
-    en: {
-      translation: {
-        "Welcome to React": "Welcome to React and react-i18next",
-      },
-    },
-    es: {
-      translation: {
-        "Welcome to React": "Bienvenido a React y react-i18next",
-      },
-    },
+    en,
+    es,
   },
 });
 

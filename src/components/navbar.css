@@ -107,9 +107,6 @@
   gap: 1rem;
 }
 
-.anchor:last-child {
-  display: none;
-}
 
 /*******SWITCH DE CAMBIO DE TEMA*******/
 .toggle-switch {

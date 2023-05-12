@@ -42,8 +42,10 @@ export default function Navbar({ productRef }) {
 
   const scrollToNextView = (e) => {
     e.preventDefault();
-    productRef.current.scrollIntoView({ behavior: "smooth" });
+    productRef?.current.scrollIntoView({ behavior: "smooth" });
   };
+
+  console.log(productRef);
 
   const scrollToUp = () => {
     const scrollStep = window.scrollY / 15;
@@ -56,14 +58,13 @@ export default function Navbar({ productRef }) {
       }
     });
   };
-
   return (
     <>
       <div
         className={isButton ? "buttonBlue" : "buttonNav"}
         onClick={handleToggleNav}
       >
-        <FaBars className="FaBars"/>
+        <FaBars className="FaBars" />
       </div>
 
       <div className={isOpen ? "navbarClosed" : "navbar"}>
@@ -73,8 +74,8 @@ export default function Navbar({ productRef }) {
         </div>
 
         <div className="container-nav">
-          <Anchor onClick={scrollToUp} className="anchor">
-            {t(navbar.NAVINICIO)}
+          <Anchor className="anchor">
+            Inicio
             <FaChevronRight className="arrow-right" />
           </Anchor>
           <Anchor onClick={scrollToNextView} className="anchor">
@@ -85,12 +86,6 @@ export default function Navbar({ productRef }) {
             Contacto
             <FaChevronRight className="arrow-right" />
           </Anchor>
-          <div className="anchor">
-            <form className="form">
-              <label for="01">Modo Oscuro</label>
-              <input onClick={toggleTheme} id="01" type="button" />
-            </form>
-          </div>
         </div>
 
         <div className="buttons-container">
