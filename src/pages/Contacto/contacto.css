@@ -213,7 +213,7 @@
 
   @media (max-width: 375px) and (max-height: 812px) {
     .container-inputs-contact {
-      gap: 1rem;
+      gap: 1.1rem;
     }
   }
 }
