@@ -1,0 +1,60 @@
+.pantalla-entrada {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #0000007c;
+  color: #fff;
+  font-family: "Courier New", monospace;
+}
+
+.titulo {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--color-blue)
+}
+
+.descripcion {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.containerButtons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.containerButtons svg {
+  width: 30px;
+  height: 30px;
+}
+
+.svgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(134, 134, 134, 0.188);
+  gap: 5px;
+  border-radius: 12px;
+  border: 1px solid gray;
+  width: 8rem;
+  height: 3rem;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.svgContainer:hover {
+  background: rgba(185, 185, 185, 0.288);
+}
+
+.containerLanguages {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}

@@ -46,11 +46,38 @@
   gap: 1rem;
 }
 
-.anchor {
+.anchorF {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.anchorF:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.anchorF:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.anchor{
   text-decoration: none;
   color: var(--color-primary);
   display: inline-block;
   position: relative;
+  cursor: pointer;
 }
 
 .anchor:after {
@@ -105,10 +132,6 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
-}
-
-.anchor:last-child {
-  display: none;
 }
 
 /*******SWITCH DE CAMBIO DE TEMA*******/
@@ -247,7 +270,6 @@
     visibility: visible;
     animation: fadeIn 3s ease-in;
   }
-  
   .buttonBlue {
     position: absolute;
     right: 15px;
@@ -376,7 +398,7 @@
     display: none;
   }
 
-  .container-nav .anchor-theme{
+  .container-nav .anchor-theme {
     display: flex;
   }
 
@@ -385,10 +407,9 @@
     align-items: center;
     color: var(--color-primary);
     gap: 5.8rem;
-    margin-left: -.5rem;
+    margin-left: -0.5rem;
   }
-  
-  
+
   .container-nav .anchor-theme .form input {
     width: 2rem;
     border-radius: 40%;

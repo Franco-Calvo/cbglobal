@@ -5,10 +5,13 @@ import LogoBlanco from "../images/CB Global White. (1).png";
 import "./navbar.css";
 import { FaBars } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa";
+import { Trans, useTranslation } from "react-i18next";
+import { Link } from "react-scroll";
 
 export default function Navbar({ productRef }) {
   const [isOpen, setIsOpen] = useState(true);
   const [isButton, setIsButton] = useState(true);
+  const { t, changeLanguage, i18n } = useTranslation("globals");
 
   function handleToggleNav() {
     setIsButton(!isButton);
@@ -40,7 +43,7 @@ export default function Navbar({ productRef }) {
 
   const scrollToNextView = (e) => {
     e.preventDefault();
-    productRef.current.scrollIntoView({ behavior: "smooth" });
+    productRef?.current.scrollIntoView({ behavior: "smooth" });
   };
 
   const scrollToUp = () => {
@@ -54,14 +57,13 @@ export default function Navbar({ productRef }) {
       }
     });
   };
-
   return (
     <>
       <div
         className={isButton ? "buttonBlue" : "buttonNav"}
         onClick={handleToggleNav}
       >
-        <FaBars className="FaBars"/>
+        <FaBars className="FaBars" />
       </div>
 
       <div className={isOpen ? "navbarClosed" : "navbar"}>
@@ -71,24 +73,20 @@ export default function Navbar({ productRef }) {
         </div>
 
         <div className="container-nav">
-          <Anchor onClick={scrollToUp} className="anchor">
-            Inicio
+          <Link to="seccion-1" smooth={true} duration={500} className="anchor">
+            {t("NAV-INICIO")}
             <FaChevronRight className="arrow-right" />
-          </Anchor>
-          <Anchor onClick={scrollToNextView} className="anchor">
-            Nosotros
+          </Link>
+          <Link to="seccion-2" smooth={true} duration={500} className="anchor">
+            {t("NAV-NOSOTROS")}
+
             <FaChevronRight className="arrow-right" />
-          </Anchor>
-          <Anchor onClick={scrollToNextView} className="anchor">
-            Contacto
+          </Link>
+          <Link to="seccion-3" smooth={true} duration={500} className="anchor">
+            {t("NAV-CONTACTO")}
+
             <FaChevronRight className="arrow-right" />
-          </Anchor>
-          <div className="anchor">
-            <form className="form">
-              <label for="01">Modo Oscuro</label>
-              <input onClick={toggleTheme} id="01" type="button" />
-            </form>
-          </div>
+          </Link>
         </div>
 
         <div className="buttons-container">
@@ -102,7 +100,7 @@ export default function Navbar({ productRef }) {
               <span className="slider"></span>
             </label>
           </div>
-          <Anchor className="button-contact">Contáctanos</Anchor>
+          <Anchor className="button-contact"> {t("BTN-NAV")}</Anchor>
         </div>
       </div>
     </>

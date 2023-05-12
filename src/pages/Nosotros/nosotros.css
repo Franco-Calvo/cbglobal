@@ -94,6 +94,11 @@ h2 {
   border-radius: 10px;
 }
 
+hr {
+  width: 90%;
+  margin-top: 10rem;
+}
+
 .card h2 {
   font-size: 1.2rem;
   background-color: var(--card-background);
@@ -149,7 +154,7 @@ h2 {
     font-size: 3.5rem;
   }
 
-  .nosotros-contenid span{
+  .nosotros-contenid span {
     font-size: 20px;
   }
 }
@@ -168,6 +173,11 @@ h2 {
     font-size: 10px;
   }
 
+  hr {
+  display: none;
+}
+
+
   .title-container {
     font-size: 35px;
   }
@@ -185,14 +195,26 @@ h2 {
     font-size: 2.5rem;
   }
 
+  .nosotros-cards {
+    gap: 3rem;
+  }
+
   .nosotros-contenid span {
     font-size: 13px;
   }
-
+  .card {
+    height: 10rem;
+  }
   .card h2 {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
+  .card span {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 320px) {
   .card span {
     font-size: 9px;
   }
@@ -205,5 +227,9 @@ h2 {
 
   .card {
     height: 7rem;
+  }
+
+  .card span {
+    font-size: 9px;
   }
 }
