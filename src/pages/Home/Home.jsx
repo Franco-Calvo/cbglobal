@@ -6,6 +6,7 @@ import image from "../../images/Financial.png";
 import imagetwo from "../../images/finanzas.jpg";
 import Navbar from "../../components/Navbar";
 import { Trans, useTranslation } from "react-i18next";
+import { Link } from "react-scroll";
 
 export default function Home() {
   const { t, changeLanguage, i18n } = useTranslation("globals");
@@ -22,10 +23,10 @@ export default function Home() {
         <p>
           {t("PARRAFO")} <br /> {t("PARRAFO2")}
         </p>
-        <Anchor className="button-info">
+        <Link to="seccion-2" smooth={true} duration={500} className="button-info">
           {t("BTN-INICIO")}
           <FaArrowRight className="arrow-info" />
-        </Anchor>
+        </Link>
       </div>
 
       <div className="content-images-home">
