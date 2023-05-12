@@ -145,7 +145,7 @@ hr {
   }
 }
 
-@media screen and (min-width: 1368px) and (max-width: 1368px) and (min-height: 768px) and (max-height: 768px) {
+@media screen and (min-width: 1360px) and (max-width: 1368px) and (min-height: 768px) and (max-height: 768px) {
   .HomeNosotros {
     gap: 1rem;
   }
@@ -156,6 +156,10 @@ hr {
 
   .nosotros-contenid span {
     font-size: 20px;
+  }
+
+  .nosotros-cards {
+    margin-bottom: -3rem;
   }
 }
 

@@ -100,7 +100,9 @@ export default function Navbar({ productRef }) {
               <span className="slider"></span>
             </label>
           </div>
-          <Anchor className="button-contact"> {t("BTN-NAV")}</Anchor>
+          <Link to="seccion-3" smooth={true} duration={500} className="button-contact">
+            {t("BTN-NAV")}
+          </Link>
         </div>
       </div>
     </>
