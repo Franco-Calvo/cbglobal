@@ -94,6 +94,11 @@ h2 {
   border-radius: 10px;
 }
 
+hr {
+  width: 90%;
+  margin-top: 10rem;
+}
+
 .card h2 {
   font-size: 1.2rem;
   background-color: var(--card-background);
@@ -107,7 +112,13 @@ h2 {
 .card span {
   font-size: 16px;
 }
+
+.TbTargetArrow {
+  background-color: var(--card-background);
+}
+
 .MdOutlineMiscellaneousServices {
+  background-color: var(--card-background);
   margin-right: 3px;
 }
 /*Responsive*/
@@ -134,6 +145,24 @@ h2 {
   }
 }
 
+@media screen and (min-width: 1360px) and (max-width: 1368px) and (min-height: 768px) and (max-height: 768px) {
+  .HomeNosotros {
+    gap: 1rem;
+  }
+
+  .nosotros-title h2 {
+    font-size: 3.5rem;
+  }
+
+  .nosotros-contenid span {
+    font-size: 20px;
+  }
+
+  .nosotros-cards {
+    margin-bottom: -3rem;
+  }
+}
+
 @media (max-width: 810px) {
   .nosotros-contenid span {
     font-size: 17px;
@@ -148,6 +177,10 @@ h2 {
     font-size: 10px;
   }
 
+  hr {
+    display: none;
+  }
+
   .title-container {
     font-size: 35px;
   }
@@ -160,19 +193,50 @@ h2 {
   }
 }
 
+@media screen and (min-width: 420px) and (max-width: 425px) and (min-height: 710px) and (max-height: 715px) {
+  .HomeNosotros {
+    gap: 0.5rem;
+    margin-top: 4rem;
+  }
+
+  .nosotros-cards .card {
+    margin-bottom: -2rem;
+  }
+
+  .card:last-child {
+    height: 6.5rem;
+  }
+}
+
 @media (max-width: 425px) {
   h2 {
     font-size: 2.5rem;
   }
 
+  .nosotros-cards {
+    gap: 3rem;
+  }
+
+  .nosotros-cards {
+    gap: 1.5rem;
+  }
+
   .nosotros-contenid span {
     font-size: 13px;
   }
-
+  .card {
+    height: 10rem;
+  }
   .card h2 {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
+  .card span {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 320px) {
   .card span {
     font-size: 9px;
   }
@@ -183,7 +247,22 @@ h2 {
     font-size: 2rem;
   }
 
+  .nosotros-title {
+    margin-top: 3rem;
+  }
   .card {
-    height: 7rem;
+    height: 6.5rem;
+  }
+
+  .nosotros-cards {
+    gap: 1.5rem;
+  }
+
+  .card span {
+    font-size: 9px;
+  }
+
+  .contact-container h4 {
+    margin-top: -2rem;
   }
 }

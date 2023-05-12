@@ -46,11 +46,38 @@
   gap: 1rem;
 }
 
+.anchorF {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.anchorF:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.anchorF:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 .anchor {
   text-decoration: none;
   color: var(--color-primary);
   display: inline-block;
   position: relative;
+  cursor: pointer;
 }
 
 .anchor:after {
@@ -105,10 +132,6 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
-}
-
-.anchor:last-child {
-  display: none;
 }
 
 /*******SWITCH DE CAMBIO DE TEMA*******/
@@ -236,14 +259,14 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 430px) {
   .buttonNav {
     position: absolute;
     right: 15px;
     top: 15px;
     z-index: 100;
-    color: var(--color-primary);
-    font-size: 1.2rem;
+    color: var(--switch-light);
+    font-size: 1.3rem;
     visibility: visible;
     animation: fadeIn 3s ease-in;
   }
@@ -312,6 +335,7 @@
   .container-nav {
     width: 100%;
     height: 100%;
+    background-color: var(--color-blue);
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
@@ -323,25 +347,23 @@
     display: none;
   }
 
-  .menu-burguer {
-    display: flex;
-    color: var(--color-primary);
-    font-size: 1.5rem;
-    position: absolute;
-    top: 15px;
-    right: 15px;
-  }
-
   .anchor {
     width: 90%;
     display: flex;
     align-items: center;
-    color: var(--color-primary);
+    background-color: var(--color-blue);
+    color: var(--switch-light);
+  }
+
+  .anchor label {
+    background-color: var(--color-blue);
+    border-bottom: 1px solid var(--color-blue);
   }
 
   .arrow-right {
     display: flex;
     position: absolute;
+    background-color: var(--color-blue);
     right: 1rem;
   }
 
@@ -351,6 +373,32 @@
   }
 
   .container-nav .anchor {
+    display: flex;
+  }
+
+  .container-nav .anchor-theme .form {
+    display: flex;
+    align-items: center;
+    color: var(--color-primary);
+    gap: 5.8rem;
+    margin-left: -0.5rem;
+    justify-content: space-around;
+  }
+
+  .container-nav .anchor .form input {
+    position: absolute;
+    right: 1rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 10px;
+  }
+
+  /*******SWITCH DE CAMBIO DE TEMA*******/
+  .toggle-switch {
+    display: none;
+  }
+
+  .container-nav .anchor-theme {
     display: flex;
   }
 

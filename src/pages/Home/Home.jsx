@@ -4,10 +4,15 @@ import { FaArrowRight } from "react-icons/fa";
 import { Link as Anchor } from "react-router-dom";
 import image from "../../images/Financial.png";
 import imagetwo from "../../images/finanzas.jpg";
+import Navbar from "../../components/Navbar";
+import { Trans, useTranslation } from "react-i18next";
+import { Link } from "react-scroll";
 
 export default function Home() {
+  const { t, changeLanguage, i18n } = useTranslation("globals");
+
   return (
-    <div className="HomeContainer">
+    <div className="HomeContainer" id="seccion-1">
       <div className="home-tittle">
         <h1 className="titleh1">
           CB <span>Global.</span>
@@ -16,18 +21,12 @@ export default function Home() {
 
       <div className="home-content">
         <p>
-          Somos una organización comprometida en brindar soluciones financieras
-          a nuestros clientes, basadas en la excelencia, la transparencia y el
-          compromiso. <br /> Nuestro objetivo es ofrecer una amplia gama de
-          servicios financieros a individuos y empresas, incluyendo
-          asesoramiento financiero personalizado, planificación de jubilación,
-          inversión en el mercado de valores, gestión de activos, seguros, y
-          mucho más.
+          {t("PARRAFO")} <br /> {t("PARRAFO2")}
         </p>
-        <Anchor className="button-info">
-          Leer más
+        <Link to="seccion-2" smooth={true} duration={500} className="button-info">
+          {t("BTN-INICIO")}
           <FaArrowRight className="arrow-info" />
-        </Anchor>
+        </Link>
       </div>
 
       <div className="content-images-home">

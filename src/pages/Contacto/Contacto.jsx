@@ -3,39 +3,36 @@ import "./contacto.css";
 import { FaArrowRight } from "react-icons/fa";
 import { useRef } from "react";
 import Navbar from "../../components/Navbar";
+import { useTranslation } from "react-i18next";
 
 export default function Contacto() {
-  const productRef = useRef(null);
+  const { t, changeLanguage, i18n } = useTranslation("globals");
   return (
-    <div productRef={productRef} ref={productRef} className="contact-container">
+    <div id="seccion-3" className="contact-container">
       <div className="info-top">
         <h4>
-          Comunícate con <span>nosotros.</span>
+          {t("TITLE-COMUNICATE")} <span> {t("TITLE-SECTNOSOTROS")}</span>
         </h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium,
-          repellendus vitae! Perspiciatis adipisci voluptatum quidem cumque
-          natus laudantium aliquid? Reprehenderit qui quisquam quos quaerat eos!
-        </p>
+        <p>{t("CONTACTS")}</p>
       </div>
       <div className="container-inputs-contact">
         <span>
-          <label>Correo electrónico</label>
+          <label>{t("LABEL-CORREO")}</label>
           <input type="email" />
         </span>
 
         <span>
-          <label>Nombre</label>
+          <label>{t("LABEL-NOMBRE")}</label>
           <input type="text" />
         </span>
 
         <span>
-          <label>Número de teléfono</label>
+          <label>{t("LABEL-TELEFONO")}</label>
           <input type="tel" />
         </span>
 
         <button type="submit" className="buttonComuni">
-          Comunicarse
+          {t("BTN-CONTACT")}
           <FaArrowRight className="arrow-contact" />
         </button>
       </div>

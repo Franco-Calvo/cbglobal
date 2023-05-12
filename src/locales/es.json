@@ -1,0 +1,34 @@
+{
+  "globals":{
+    "TITLE-NOSOTROS": "Sobre",
+    "NOSOTROS": "Nosotros",
+    "TITLE-COMUNICATE": "Comunicate con ",
+    "TITLE-SECTNOSOTROS": "nosotros.",
+      "NAV-INICIO": "Inicio",
+      "NAV-NOSOTROS": "Nosotros",
+      "NAV-CONTACTO": "Contacto",
+      "BTN-NAV": "Contactáctanos",
+      "BTN-INICIO": "Leer mas",
+      "BTN-CONTACT": "Comunicarse",
+      "PARRAFO": "Somos una organización comprometida en brindar soluciones financieras a nuestros clientes, basadas en la excelencia, la transparencia y el compromiso.", 
+      "PARRAFO2": "Nuestro objetivo es ofrecer una amplia gama de servicios financieros a individuos y empresas, incluyendo asesoramiento financiero personalizado, planificación de jubilación, inversión en el mercado de valores, gestión de activos, seguros, y mucho más.",
+      "TITULO-UNO": "Quienes somos:",
+      "SPAN-DOS": "Contamos con un equipo de expertos altamente calificados en finanzas, inversiones y seguros, con años de experiencia en el sector financiero. Nuestra capacidad para entender las necesidades de nuestros clientes y crear soluciones personalizadas nos distingue de la competencia.",
+      "SPAN-TRES": "En nuestra empresa, valoramos la integridad y la transparencia en todo lo que hacemos. Trabajamos diligentemente para asegurarnos de que nuestros clientes comprendan completamente sus opciones financieras y las consecuencias de cada una de ellas.",
+      "TITLE-CARD-UNO":" Misión",
+      "TITLE-CARD-TRES":"Servicios",
+      "SPAN-CARD-UNO" : "Estamos comprometidos en construir relaciones a largo plazo con nuestros clientes, basadas en la confianza y el respeto mutuo. Nos enorgullece nuestra capacidad para ayudar a nuestros clientes a alcanzar sus objetivos financieros.",
+      "SPAN-CARD-DOS" : "Nuestro objetivo es ofrecer una amplia gama de servicios financieros a individuos y empresas, incluyendo asesoramiento financiero personalizado, planificación de jubilación, inversión en el mercado de valores, gestión de activos, seguros, y mucho más.",
+      "SPAN-CARD-TRES" : "Gracias por considerar nuestra empresa para sus necesidades financieras. Esperamos tener la oportunidad de ayudarle a alcanzar sus objetivos financieros y alcanzar la estabilidad financiera que busca.",
+      "PARRAFO-COMUNICATE": "",
+      "LABEL-CORREO": "Correo Electrónico",
+      "LABEL-NOMBRE": "Nombre",
+      "LABEL-TELEFONO": "Número de teléfono",
+      "A-UNO": "",
+      "A-DOS": "",
+      "A-TRES": "",
+      "DERECHOS": "Todos los derechos reservados.",
+      "CONTACTS": "Si estás interesado en nuestros servicios o necesitas asesoramiento, no dudes en ponerte en contacto con nosotros a través del formulario que hemos preparado para ti. Estaremos encantados de recibir tus consultas y ayudarte en todo lo que necesites. Queremos brindarte una experiencia de atención al cliente excepcional y para ello nos aseguraremos de responder a tus requerimientos de manera rápida y eficiente. Esperamos poder trabajar contigo y ofrecerte soluciones a medida para tus necesidades."
+    }
+
+  }
