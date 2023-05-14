@@ -187,9 +187,11 @@
     }
   }
 
+
   @media (max-width: 360px) {
     .image {
       height: 19rem;
     }
   }
+
 }
