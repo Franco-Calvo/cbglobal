@@ -236,12 +236,6 @@ hr {
   }
 }
 
-@media (max-width: 320px) {
-  .card span {
-    font-size: 9px;
-  }
-}
-
 @media (max-width: 375px) {
   h2 {
     font-size: 2rem;
@@ -255,7 +249,7 @@ hr {
   }
 
   .nosotros-cards {
-    gap: 1.5rem;
+    gap: 1rem;
   }
 
   .card span {
@@ -264,5 +258,11 @@ hr {
 
   .contact-container h4 {
     margin-top: -2rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .card span {
+    font-size: 9px;
   }
 }
