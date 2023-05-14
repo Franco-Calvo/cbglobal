@@ -240,18 +240,18 @@ hr {
   h2 {
     font-size: 2rem;
   }
-
+  
   .nosotros-title {
     margin-top: 3rem;
   }
   .card {
     height: 6.5rem;
   }
-
+  
   .nosotros-cards {
     gap: 1rem;
   }
-
+  
   .card span {
     font-size: 9px;
   }
@@ -261,8 +261,13 @@ hr {
   }
 }
 
+
+
+
 @media (max-width: 320px) {
   .card span {
     font-size: 9px;
   }
+
 }
+
