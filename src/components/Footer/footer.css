@@ -33,7 +33,7 @@
   width: 100%;
   align-items: center;
   justify-content: center;
-  margin-bottom: -30px;
+  margin-bottom: -1.875rem;
   color: var(--switch-light);
   background-color: var(--color-blue);
 }
@@ -164,7 +164,6 @@
   .footer-h {
     align-items: center;
     justify-content: center;
-    
   }
 }
 
@@ -176,6 +175,4 @@
   .box-about {
     height: 8vh;
   }
-
-  
 }
