@@ -43,9 +43,6 @@ export default function Nosotros() {
           <span>{t("SPAN-CARD-TRES")}</span>
         </div>
       </div>
-
-    <hr />
-
     </div>
   );
 }
