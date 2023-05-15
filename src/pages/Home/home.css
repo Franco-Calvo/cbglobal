@@ -79,7 +79,7 @@
 
 .image {
   width: 49%;
-  height: 450px;
+  height: 28.125rem;
   display: flex;
   margin: 0.5%;
 }
@@ -104,7 +104,7 @@
 
   .home-content .button-info {
     width: 20%;
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 }
 
