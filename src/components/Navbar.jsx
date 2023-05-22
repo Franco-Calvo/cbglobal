@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link as Anchor } from "react-router-dom";
-import Logo from "../images/CB Global..png";
+import Logo from "../images/Frame 36.png";
 import LogoBlanco from "../images/CB Global White. (1).png";
 import "./navbar.css";
 import { FaBars } from "react-icons/fa";

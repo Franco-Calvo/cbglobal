@@ -50,7 +50,7 @@ export default function Footer() {
 
           <div className="about-rights">
             <p className="p-rights">
-              &copy; CB Global - 2022 - Todos los derechos reservados
+              &copy; CB Global - 2023 - {t("DERECHOS")}
             </p>
           </div>
         </div>
