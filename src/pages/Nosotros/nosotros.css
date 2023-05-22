@@ -1,6 +1,6 @@
 .HomeNosotros {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -51,7 +51,7 @@ h2 {
 }
 
 .title-container {
-  font-size: 40px;
+  font-size: 2.5rem;
   display: flex;
   justify-content: flex-start;
   width: 100%;
@@ -60,12 +60,12 @@ h2 {
 }
 
 .card span {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 300;
 }
 
 .nosotros-contenid span {
-  font-size: 26px;
+  font-size: 1.625rem;
   font-weight: 300;
   color: var(--color-primary);
 }
@@ -105,12 +105,8 @@ hr {
 }
 
 .card span {
-  font-size: 16px;
+  font-size: 1rem;
   background-color: var(--card-background);
-}
-
-.card span {
-  font-size: 16px;
 }
 
 .TbTargetArrow {
@@ -119,17 +115,17 @@ hr {
 
 .MdOutlineMiscellaneousServices {
   background-color: var(--card-background);
-  margin-right: 3px;
+  margin-right: 0.188rem;
 }
 /*Responsive*/
 
 @media (max-width: 1300px) {
   .card span {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .nosotros-contenid span {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 }
 
@@ -155,7 +151,7 @@ hr {
   }
 
   .nosotros-contenid span {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   .nosotros-cards {
@@ -165,16 +161,16 @@ hr {
 
 @media (max-width: 810px) {
   .nosotros-contenid span {
-    font-size: 17px;
+    font-size: 1.063rem;
   }
   .card span {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 }
 
 @media (max-width: 540px) {
   .card span {
-    font-size: 10px;
+    font-size: 0.625rem;
   }
 
   hr {
@@ -182,7 +178,7 @@ hr {
   }
 
   .title-container {
-    font-size: 35px;
+    font-size: 2.188rem;
   }
   .card {
     height: 6.5rem;
@@ -222,7 +218,7 @@ hr {
   }
 
   .nosotros-contenid span {
-    font-size: 13px;
+    font-size: 0.813rem;
   }
   .card {
     height: 10rem;
@@ -232,7 +228,7 @@ hr {
   }
 
   .card span {
-    font-size: 11px;
+    font-size: 0.688rem;
   }
 }
 
@@ -253,7 +249,7 @@ hr {
   }
   
   .card span {
-    font-size: 9px;
+    font-size: 0.563rem;
   }
 
   .contact-container h4 {

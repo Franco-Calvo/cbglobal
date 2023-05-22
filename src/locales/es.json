@@ -28,7 +28,11 @@
       "A-DOS": "",
       "A-TRES": "",
       "DERECHOS": "Todos los derechos reservados.",
-      "CONTACTS": "Si estás interesado en nuestros servicios o necesitas asesoramiento, no dudes en ponerte en contacto con nosotros a través del formulario que hemos preparado para ti. Estaremos encantados de recibir tus consultas y ayudarte en todo lo que necesites. Queremos brindarte una experiencia de atención al cliente excepcional y para ello nos aseguraremos de responder a tus requerimientos de manera rápida y eficiente. Esperamos poder trabajar contigo y ofrecerte soluciones a medida para tus necesidades."
+      "CONTACTS": "Si estás interesado en nuestros servicios o necesitas asesoramiento, no dudes en ponerte en contacto con nosotros a través del formulario que hemos preparado para ti. Estaremos encantados de recibir tus consultas y ayudarte en todo lo que necesites. Queremos brindarte una experiencia de atención al cliente excepcional y para ello nos aseguraremos de responder a tus requerimientos de manera rápida y eficiente. Esperamos poder trabajar contigo y ofrecerte soluciones a medida para tus necesidades.",
+      "EMAIL": "Estaría encantado de comunicarme con ustedes para asesoramiento",
+      "NAMEIS": "mi nombre es",
+      "PHONEIS": "y mi teléfono es"
+
     }
 
   }
