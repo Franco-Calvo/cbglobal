@@ -40,6 +40,7 @@ export default function Contacto() {
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            required
           />
         </span>
 
@@ -55,7 +56,7 @@ export default function Contacto() {
         <span>
           <label>{t("LABEL-TELEFONO")}</label>
           <input
-            type="tel"
+            type="number"
             value={telefono}
             onChange={(e) => setTelefono(e.target.value)}
           />
