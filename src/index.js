@@ -8,6 +8,9 @@ import { I18nextProvider } from "react-i18next";
 import i18n from "i18next";
 import es from "./locales/es.json";
 import en from "./locales/en.json";
+import { inject } from "@vercel/analytics";
+
+inject();
 
 i18n.init({
   interpolation: { escapeValue: false },
