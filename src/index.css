@@ -30,5 +30,8 @@
 }
 
 body {
-  background: var(--color-background);
+  /* background: var(--color-background); */
+  background-image: url(./images/73a40e5fff34c1451c54b8bf244d307a5e9a8a1a.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
