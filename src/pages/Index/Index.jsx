@@ -22,18 +22,17 @@ export default function Index() {
   }
   return (
     <>
-      {/* {showModal ? (
+      {showModal ? (
         <Modal onClose={handleCloseModal} />
-      ) : ( */}
-      <div className="index">
-        <div></div>
-        {/* <Navbar /> */}
-        {/* <Home /> */}
-        {/* <Nosotros /> */}
-        {/* <Contacto /> */}
-        {/* <Footer /> */}
-      </div>
-      {/* // )} */}
+      ) : (
+        <>
+          <Navbar />
+          <Home />
+          <Nosotros />
+          <Contacto />
+          <Footer />
+        </>
+      )}
     </>
   );
 }
